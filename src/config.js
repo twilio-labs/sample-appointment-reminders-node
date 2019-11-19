@@ -17,8 +17,8 @@ cfg.secret = process.env.APP_SECRET || 'keyboard cat';
 // A good practice is to store these string values as system environment
 // variables, and load them from there as we are doing below. Alternately,
 // you could hard code these values here as strings.
-cfg.twilioAccountSid = process.env.TWILIO_ACCOUNT_SID;
-cfg.twilioAuthToken = process.env.TWILIO_AUTH_TOKEN;
+cfg.twilioAccountSid = process.env.TWILIO_ACCOUNT_SID || '';
+cfg.twilioAuthToken = process.env.TWILIO_AUTH_TOKEN || '';
 
 // A Twilio number you control - choose one from:
 // Specify in E.164 format, e.g. "+16519998877"
