@@ -35,3 +35,5 @@ node_modules
 #local env file
 .env.local
 .env
+
+_data/db.json
