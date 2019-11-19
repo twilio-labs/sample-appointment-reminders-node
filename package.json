@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "NODE_ENV=test && eslint . && mocha test",
+    "pretest": "cross-env NODE_ENV=test",
+    "test": "eslint . && mocha test",
     "dev": "nodemon ./bin/www"
   },
   "description": "Node implementation of Appointment Reminders",
@@ -47,6 +48,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "cheerio": "^0.22.0",
+    "cross-env": "^6.0.3",
     "eslint": "^6.6.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.6.0",
