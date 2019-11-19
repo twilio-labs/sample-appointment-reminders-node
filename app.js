@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 
 const appointments = require('./routes/appointments');
 const scheduler = require('./src/scheduler');
+const cfg = require('./src/config');
 
 const app = express();
 
@@ -44,5 +45,9 @@ app.use(function(err, req, res, next) {
 
 if ((process.env.NODE_ENV || '').toLowerCase() !== 'test' && !!process.env.CI)
   scheduler.start();
+
+app.listen(cfg.port, function() { 
+  console.log(`Starting sample-appointment-reminders on port at http://localhost:${cfg.port}`);
+});
 
 module.exports = app;
