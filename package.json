@@ -6,7 +6,8 @@
     "start": "node app",
     "pretest": "cross-env NODE_ENV=test",
     "test": "eslint . && mocha test",
-    "dev": "nodemon app"
+    "dev": "nodemon app",
+    "main": "./app.js"
   },
   "description": "Node implementation of Appointment Reminders",
   "author": {
