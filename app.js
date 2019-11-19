@@ -8,7 +8,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
 const appointments = require('./routes/appointments');
-const scheduler = require('./scheduler');
+const scheduler = require('./src/scheduler');
 
 const app = express();
 
@@ -20,7 +20,7 @@ app.set('view engine', 'pug');
 // app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.locals.moment = require('moment');
@@ -59,6 +59,10 @@ app.use(function(err, req, res, next) {
   });
 });
 
-scheduler.start();
+if (
+  process.env.NODE_ENV.toLowerCase() !== 'test' &&
+  process.env.NODE_ENV.toLowerCase() !== 'ci'
+)
+  scheduler.start();
 
 module.exports = app;
