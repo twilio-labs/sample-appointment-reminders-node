@@ -59,10 +59,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-if (
-  process.env.NODE_ENV.toLowerCase() !== 'test' &&
-  process.env.NODE_ENV.toLowerCase() !== 'ci'
-)
+if (process.env.NODE_ENV.toLowerCase() !== 'test' && !!process.env.CI)
   scheduler.start();
 
 module.exports = app;

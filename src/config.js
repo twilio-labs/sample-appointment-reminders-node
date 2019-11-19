@@ -1,8 +1,6 @@
-'use strict';
-
-require('dotenv-safe').load({
-  allowEmptyValues: !!process.env.CI,
-});
+if (!process.env.CI) {
+  require('dotenv-safe').load();
+}
 
 const cfg = {};
 
@@ -25,11 +23,6 @@ cfg.twilioAuthToken = process.env.TWILIO_AUTH_TOKEN;
 // A Twilio number you control - choose one from:
 // Specify in E.164 format, e.g. "+16519998877"
 cfg.twilioPhoneNumber = process.env.TWILIO_PHONE_NUMBER;
-
-// MongoDB connection string - MONGO_URL is for local dev,
-// MONGOLAB_URI is for the MongoLab add-on for Heroku deployment
-cfg.mongoUrl = process.env.MONGOLAB_URI || process.env.MONGO_URL;
-cfg.mongoUrlTest = process.env.MONGO_URL_TEST;
 
 // Export configuration object
 module.exports = cfg;
