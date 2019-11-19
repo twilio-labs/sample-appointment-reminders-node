@@ -33,7 +33,7 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-// error handlers
+// error handler
 app.use(function(err, req, res, next) {
   console.error(err);
   res.status(err.status || 500);
@@ -47,7 +47,7 @@ if ((process.env.NODE_ENV || '').toLowerCase() !== 'test' && !!process.env.CI)
   scheduler.start();
 
 app.listen(cfg.port, function() { 
-  console.log(`Starting sample-appointment-reminders on port at http://localhost:${cfg.port}`);
+  console.log(`Starting sample-appointment-reminders at http://localhost:${cfg.port}`);
 });
 
 module.exports = app;
