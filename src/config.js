@@ -1,6 +1,8 @@
 'use strict';
 
-require('dotenv-safe').load();
+require('dotenv-safe').load({
+  allowEmptyValues: !!process.env.CI,
+});
 
 const cfg = {};
 
