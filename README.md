@@ -95,7 +95,7 @@ npm test
 ## Resources
 * [Appointment reminders tutorial](https://www.twilio.com/docs/tutorials/walkthrough/appointment-reminders/node/express)
 * [Build appointment reminders in Studio (Video)](https://www.youtube.com/watch?v=vl0FbbZBADQ)
-* [Appointment reminders glossary)[https://www.twilio.com/docs/glossary/appointment-reminders]
+* [Appointment reminders glossary][https://www.twilio.com/docs/glossary/appointment-reminders]
 
 ## Disclaimer
 
