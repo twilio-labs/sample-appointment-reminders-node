@@ -9,7 +9,9 @@
 Status](https://travis-ci.org/TwilioDevEd/appointment-reminders-node.svg?branch=master)](https://travis-ci.org/TwilioDevEd/appointment-reminders-node)
 
 Use Twilio to create automatic appointment reminders for your business users. 
+
 **TODO: Feature description**
+
 **TODO: Customer journey description**
 
 Implementations in other languages:
@@ -17,6 +19,7 @@ Implementations in other languages:
 
 ### How it works
 **TODO: UML Diagram**
+
 We can render UML diagrams using [Mermaid](https://mermaidjs.github.io/).
 
 **TODO: Describe how it works**
@@ -78,7 +81,7 @@ npm run dev
 
 That's it!
 
-### Cloud development
+### Cloud deployment
 **TODO**
 
 ## Tests
@@ -90,6 +93,7 @@ npm test
 
 ## Resources
 * [Twilio Appointment-reminders tutorial](https://www.twilio.com/docs/tutorials/walkthrough/appointment-reminders/node/express)
+
 * **TODO: blog posts? find additional resources**
 
 ## Disclaimer
