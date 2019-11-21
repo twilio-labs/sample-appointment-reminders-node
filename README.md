@@ -8,14 +8,15 @@
 [![Build
 Status](https://travis-ci.org/TwilioDevEd/appointment-reminders-node.svg?branch=master)](https://travis-ci.org/TwilioDevEd/appointment-reminders-node)
 
-Use Twilio to create automatic appointment reminders for your business users. 
+Appointment reminders allow you to automate the process of reaching out to your customers in advance for an upcoming appointment. In this sample, you'll learn how to use Twilio to create automatic appointment reminders for your business users. Use appointment reminders to reduce no-shows and ensure customers have everything they need in advance of an appointment. Whether you're a dentist, doctor, cable company, or car repair shop, you can use automated appointment reminders to save time and money.
 
-**TODO: Feature description**
-
-**TODO: Customer journey description**
+This sample includes the code required to implement an appointment reminder web application and scheduling job.
 
 Implementations in other languages:
-**TODO: Table**
+
+
+| .net| java | python | php |
+| :----- | :----- | :----- | :----- |
 
 ### How it works
 **TODO: UML Diagram**
@@ -81,15 +82,15 @@ npm run dev
 
 That's it!
 
-### Cloud deployment
-**TODO**
-
 ## Tests
 You can run the tests locally by typing:
 
 ```bash
 npm test
 ```
+
+### Cloud deployment
+**TODO**
 
 ## Resources
 * [Twilio Appointment-reminders tutorial](https://www.twilio.com/docs/tutorials/walkthrough/appointment-reminders/node/express)
@@ -100,4 +101,3 @@ npm test
 
 -  [MIT License](http://www.opensource.org/licenses/mit-license.html)
 - No warranty expressed or implied. Software is as is.
-- Lovingly crafted by Twilio Developer Education.
