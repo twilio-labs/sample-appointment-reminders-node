@@ -82,7 +82,7 @@ npm run dev
 
 That's it!
 
-## Tests
+### Tests
 You can run the tests locally by typing:
 
 ```bash
@@ -93,9 +93,9 @@ npm test
 **TODO**
 
 ## Resources
-* [Twilio Appointment-reminders tutorial](https://www.twilio.com/docs/tutorials/walkthrough/appointment-reminders/node/express)
-
-* **TODO: blog posts? find additional resources**
+* [Appointment reminders tutorial](https://www.twilio.com/docs/tutorials/walkthrough/appointment-reminders/node/express)
+* [Build appointment reminders in Studio (Video)](https://www.youtube.com/watch?v=vl0FbbZBADQ)
+* [Appointment reminders glossary)[https://www.twilio.com/docs/glossary/appointment-reminders]
 
 ## Disclaimer
 
