@@ -7,7 +7,6 @@
   "addons": [],
   "keywords": ["nodejs", "twilio"],
   "env": {
-    "NODE_ENV": "production",
     "TWILIO_ACCOUNT_SID": {
       "description": "Your Twilio Account SID. Get a free account at twilio.com/try-twilio",
       "value": ""
