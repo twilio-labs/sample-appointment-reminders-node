@@ -1,8 +1,6 @@
-process.env.NODE_ENV = 'test';
-
 const expect = require('chai').expect;
 const supertest = require('supertest');
-const app = require('../app.js');
+const app = require('../server.js');
 const { Appointment } = require('../src/db');
 const agent = supertest(app);
 

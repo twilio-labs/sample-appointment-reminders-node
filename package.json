@@ -4,11 +4,11 @@
   "private": true,
   "main": "./app.js",
   "scripts": {
-    "start": "node app",
+    "start": "node .",
     "setup": "configure-env",
     "pretest": "cross-env NODE_ENV=test",
     "test": "eslint . && mocha test",
-    "dev": "nodemon app"
+    "dev": "nodemon ."
   },
   "description": "Node implementation of Appointment Reminders",
   "author": {
