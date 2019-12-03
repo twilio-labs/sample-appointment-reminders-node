@@ -1,89 +1,103 @@
-<a href="https://www.twilio.com">
-  <img src="https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg" alt="Twilio" width="250" />
+<a  href="https://www.twilio.com">
+<img  src="https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg"  alt="Twilio"  width="250"  />
 </a>
-
-# Appointment Reminders. Powered by Twilio - Node.js/Express
-
+ 
+# Appointment Reminders
+  
+## About  
 [![Build
 Status](https://travis-ci.org/TwilioDevEd/appointment-reminders-node.svg?branch=master)](https://travis-ci.org/TwilioDevEd/appointment-reminders-node)
 
+Appointment reminders allow you to automate the process of reaching out to your customers in advance for an upcoming appointment. In this sample, you'll learn how to use Twilio to create automatic appointment reminders for your business users. Use appointment reminders to reduce no-shows and ensure customers have everything they need in advance of an appointment. Whether you're a dentist, doctor, cable company, or car repair shop, you can use automated appointment reminders to save time and money.
 
-Use Twilio to create automatic appointment reminders for your business users. For a step-by-step tutorial see [twilio docs](https://www.twilio.com/docs/tutorials/walkthrough/appointment-reminders/node/express).
+This sample includes the code required to implement an appointment reminder web application and scheduling job.
+
+Implementations in other languages:
 
 
-## Local development
+| .net| java | python | php |
+| :----- | :----- | :----- | :----- |
 
-First you need to install [Node.js](http://nodejs.org/).
+### How it works
+**TODO: UML Diagram**
 
-1. This sample application stores data in a [MongoDB](https://www.mongodb.org/) database using [Mongoose](http://mongoosejs.com/). You can download and run MongoDB yourself (on OS X, Linux or Windows).
+We can render UML diagrams using [Mermaid](https://mermaidjs.github.io/).
 
-   On OS X, maybe the easiest way to get MongoDB running locally is to install it via [Homebrew](http://brew.sh/).
+**TODO: Describe how it works**
 
-   ```bash
-   brew install mongodb
-   ```
-   You should then be able to run a local server with:
 
-   ```bash
-   mongod
-   ```
+## Features
+* Receive notifications using [Programmable SMS]([https://www.twilio.com/sms](https://www.twilio.com/sms)) .
+* User interface to create reminders.
+* Small JSON database using [lowdb]([https://github.com/typicode/lowdb](https://github.com/typicode/lowdb)).
+* Execute reminders on a schedule using [node-cron](https://github.com/kelektiv/node-cron).
 
-To run the app locally:
+## Set up
+
+### Requirements
+-   [Node.js](https://nodejs.org/)
+-   A Twilio account -  [sign up](https://www.twilio.com/try-twilio)
+
+### Twilio Account Settings
+This application should give you a ready-made starting point for writing your
+own appointment reminder application. Before we begin, we need to collect
+all the config values we need to run the application:
+
+| Config&nbsp;Value  | Description |
+| :-------------  |:------------- |
+Account&nbsp;Sid| Your primary Twilio account identifier - find this [in the Console](https://www.twilio.com/console).
+Auth&nbsp;Token | Used to authenticate - [just like the above, you'll find this here](https://www.twilio.com/console).
+Phone&nbsp;number | A Twilio phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) - you can [get one here](https://www.twilio.com/console/phone-numbers/incoming)
+
+### Local development
+  After the above requirements have been met:
 
 1. Clone this repository and `cd` into it
 
-   ```bash
-   git clone git@github.com:TwilioDevEd/appointment-reminders-node.git
+```bash
+git clone git@github.com:twilio-labs/sample-appointment-reminders-node.git
+cd sample-appointment-reminders-node
+``` 
+2. Install dependencies
+```bash
+npm install
+```
 
-   cd appointment-reminders-node
-   ```
+3. Set your environment variables 
+```bash
+npx configure-env
+``` 
+See [Twilio Account Settings](#twilio-account-settings) to locate the necessary environment variables.
 
-1. Install dependencies
+4. Run the application
+```bash
+npm start
+```
+Alternatively you can use this command to start the server in development mode. It will reload whenever you change any files.
+```bash
+npm run dev
+```
 
-    ```bash
-    npm install
-    ```
+5. Navigate to [http://localhost:3000](http://localhost:3000)
 
-1. Copy the sample configuration file and edit it to match your configuration
+That's it!
 
-   ```bash
-   cp .env.example .env
-   ```
-   You can find your `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` in your
-   [Twilio Account Settings](https://www.twilio.com/console).
-   You will also need a `TWILIO_PHONE_NUMBER`, which you may find [here](https://www.twilio.com/console/phone-numbers/incoming).
-
-   You can reuse the `MONGO_URL_TEST` for `MONGO_URL` for most default installs. Otherwise, use your production Mongo installation.
-
-   Run `source .env` to export the environment variables
-
-1. Run the application
-
-    ```bash
-    npm start
-    ```
-    Alternatively you might also consider using [nodemon](https://github.com/remy/nodemon) for this. It works just like
-    the node command but automatically restarts your application when you change any source code files.
-
-    ```bash
-    npm install -g nodemon
-    nodemon ./bin/www
-    ```
-
-1. Check it out at [http://localhost:3000](http://localhost:3000)
-
-That's it
-
-## Run the tests
-
-You can run the tests locally by typing
+### Tests
+You can run the tests locally by typing:
 
 ```bash
 npm test
 ```
 
-## Meta
+### Cloud deployment
+**TODO**
 
-* No warranty expressed or implied. Software is as is. Diggity.
-* [MIT License](http://www.opensource.org/licenses/mit-license.html)
-* Lovingly crafted by Twilio Developer Education.
+## Resources
+* [Appointment reminders tutorial](https://www.twilio.com/docs/tutorials/walkthrough/appointment-reminders/node/express)
+* [Build appointment reminders in Studio (Video)](https://www.youtube.com/watch?v=vl0FbbZBADQ)
+* [Appointment reminders glossary](https://www.twilio.com/docs/glossary/appointment-reminders)
+
+## Disclaimer
+
+-  [MIT License](http://www.opensource.org/licenses/mit-license.html)
+- No warranty expressed or implied. Software is as is.
