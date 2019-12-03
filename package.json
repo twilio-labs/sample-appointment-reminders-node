@@ -2,22 +2,23 @@
   "name": "sample-appointment-reminders-node",
   "version": "1.0.0",
   "private": true,
+  "main": "./app.js",
   "scripts": {
     "start": "node app",
+    "setup": "configure-env",
     "pretest": "cross-env NODE_ENV=test",
     "test": "eslint . && mocha test",
-    "dev": "nodemon app",
-    "main": "./app.js"
+    "dev": "nodemon app"
   },
   "description": "Node implementation of Appointment Reminders",
   "author": {
-    "name": "Omar Ahmed",
-    "email": "neb.trx@gmail.com"
+    "name": "Twilio",
+    "email": "open-source@twilio.com"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TwilioDevEd/appointment-reminders-node"
+    "url": "https://github.com/twilio-labs/sample-appointment-reminders-node"
   },
   "keywords": [
     "node",
@@ -32,6 +33,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "configure-env": "^1.0.0",
     "cookie-parser": "~1.4.3",
     "cron": "^1.1.0",
     "debug": ">=2.6.9",
