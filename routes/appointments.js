@@ -44,7 +44,7 @@ router.post('/', function(req, res, next) {
   const appointment = new Appointment({
     name: name,
     phoneNumber: phoneNumber,
-    notification: notification,
+    notification: Number(notification),
     timeZone: timeZone,
     time: time,
   });
