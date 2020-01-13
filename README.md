@@ -4,7 +4,7 @@
  
 # Appointment Reminders powered by Twilio
 
-[![Actions Status](https://github.com/twilio-labs/sample-appointment-reminders-node/workflows/Node%20CI/badge.svg)](https://github.com/twilio-labs/sample-appointment-reminders/actions)
+[![Actions Status](https://github.com/twilio-labs/sample-appointment-reminders-node/workflows/Node%20CI/badge.svg)](https://github.com/twilio-labs/sample-appointment-reminders-node/actions)
 
 ## About
 
