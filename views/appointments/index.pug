@@ -7,7 +7,7 @@ block content
           th Name
           th Phone Number
           th Appointment time (UTC)
-          th Notification Time (minutes)
+          th Notification time (UTC)
           th Time Zone
           th Actions
           th
@@ -16,8 +16,8 @@ block content
           tr
             td  !{appointment.name}
             td  !{appointment.phoneNumber}
-            td  !{appointment.time}
-            td  !{appointment.notification}
+            td  #{moment(appointment.time).format('YYYY-MM-DD hh:mma')}
+            td  #{moment(appointment.time).subtract(appointment.notification, 'minutes').format('YYYY-MM-DD hh:mma')}
             td  !{appointment.timeZone}
             td
               a.btn.btn-default.btn-sm(href="/appointments/" + appointment.id + "/edit") Edit
