@@ -18,6 +18,7 @@
   .col-sm-8
     select#selectDelta.form-control(name='notification', required='', value=appointment.notification)
       option(selected=appointment.notification == '', value='') Send alert before
+      option(selected=appointment.notification == '2', value='2') 2 minutes before
       option(selected=appointment.notification == '15', value='15') 15 minutes before
       option(selected=appointment.notification == '30', value='30') 30 minutes before
       option(selected=appointment.notification == '45', value='45') 45 minutes before
