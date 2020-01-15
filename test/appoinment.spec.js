@@ -54,7 +54,7 @@ describe('appointment', function() {
         .send({
           name: 'Appointment',
           phoneNumber: '+5555555',
-          time: '02-17-2016 12:00am',
+          time: '2016-02-17 12:00am',
           notification: 15,
           timeZone: 'Africa/Algiers',
         })
@@ -94,7 +94,7 @@ describe('appointment', function() {
           .send({
             name: 'Appointment2',
             phoneNumber: '+66666666',
-            time: '02-17-2016 12:00am',
+            time: '2016-02-17 12:00am',
             notification: 15,
             timeZone: 'Africa/Algiers',
           })

@@ -11,7 +11,7 @@
 .form-group
   label.col-sm-4.control-label(for='time') Appointment Date
   .col-sm-8
-    input#inputDate.form-control(type='text', name='time', placeholder='Pick a Date', required='', value=moment(appointment.time).format('MM-DD-YYYY hh:mma'))
+    input#inputDate.form-control(type='text', name='time', placeholder='Pick a Date', required='', value=moment(appointment.time).format('YYYY-MM-DD hh:mma'))
     em The date and time of the appointment.
 .form-group
   label.col-sm-4.control-label(for='selectNotification') Notification Time *

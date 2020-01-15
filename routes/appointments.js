@@ -39,7 +39,7 @@ router.post('/', function(req, res, next) {
   const phoneNumber = req.body.phoneNumber;
   const notification = req.body.notification;
   const timeZone = req.body.timeZone;
-  const time = moment(req.body.time, 'MM-DD-YYYY hh:mma');
+  const time = moment(req.body.time, 'YYYY-MM-DD hh:mma');
 
   const appointment = new Appointment({
     name: name,
@@ -71,7 +71,7 @@ router.post('/:id/edit', function(req, res, next) {
   const phoneNumber = req.body.phoneNumber;
   const notification = req.body.notification;
   const timeZone = req.body.timeZone;
-  const time = moment(req.body.time, 'MM-DD-YYYY hh:mma');
+  const time = moment(req.body.time, 'YYYY-MM-DD hh:mma');
 
   Appointment.findOne({ _id: id }).then(function(appointment) {
     appointment.name = name;
