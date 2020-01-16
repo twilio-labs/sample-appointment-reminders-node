@@ -12,7 +12,7 @@ describe('appointment', function() {
     appointment = new Appointment({
       name: 'Appointment',
       phoneNumber: '+5555555',
-      time: new Date(),
+      time: '2016-02-17 12:00:00',
       notification: 15,
       timeZone: 'Africa/Algiers',
     });
@@ -27,7 +27,8 @@ describe('appointment', function() {
           .expect(function(response) {
             expect(response.text).to.contain('Appointment');
             expect(response.text).to.contain('+5555555');
-            expect(response.text).to.contain('15');
+            expect(response.text).to.contain('2016-02-17 12:00pm');
+            expect(response.text).to.contain('2016-02-17 11:45am');
             expect(response.text).to.contain('Africa/Algiers');
           })
           .expect(200, done);
