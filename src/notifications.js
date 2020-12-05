@@ -24,7 +24,7 @@ function requiresNotification(appointment, currentTime) {
             .diff(moment(currentTime).utc())
         )
         .asMinutes()
-    ) === appointment.notification
+    ) === parseInt(appointment.notification, 10)
   );
 }
 
@@ -39,7 +39,7 @@ async function sendNotification(appointment) {
     to: `+ ${appointment.phoneNumber}`,
     from: cfg.twilioPhoneNumber,
     /* eslint-disable max-len */
-    body: `Hi ${appointment.name}. Just a reminder that you have an appointment coming up.`,
+    body: `Hi ${appointment.name}. Just a reminder that you have an appointment coming up in ${appointment.notification} minutes.`,
     /* eslint-enable max-len */
   };
 
