@@ -56,10 +56,10 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.6.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "mocha": "^6.2.2",
-    "nodemon": "^1.19.4",
+    "mocha": "^6.2.3",
+    "nodemon": "^2.0.0",
     "prettier": "^1.19.1",
     "proxyquire": "^1.7.10",
-    "supertest": "^2.0.1"
+    "supertest": "^3.0.0"
   }
 }
