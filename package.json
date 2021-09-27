@@ -57,7 +57,7 @@
     "eslint-config-prettier": "^6.6.0",
     "eslint-plugin-prettier": "^3.1.1",
     "mocha": "^6.2.2",
-    "nodemon": "^1.19.4",
+    "nodemon": "^2.0.3",
     "prettier": "^1.19.1",
     "proxyquire": "^1.7.10",
     "supertest": "^2.0.1"
