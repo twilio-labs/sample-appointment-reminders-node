@@ -60,6 +60,6 @@
     "nodemon": "^1.19.4",
     "prettier": "^1.19.1",
     "proxyquire": "^1.7.10",
-    "supertest": "^2.0.1"
+    "supertest": "^3.0.0"
   }
 }
