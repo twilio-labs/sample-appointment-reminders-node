@@ -43,21 +43,21 @@
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.0",
     "morgan": "^1.9.1",
-    "npm": "^6.13.4",
+    "npm": "^7.0.0",
     "pug": "^2.0.0-beta.12",
     "serve-favicon": "^2.5.0",
-    "twilio": "^3.37.1"
+    "twilio": "^4.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "cheerio": "^0.22.0",
     "cross-env": "^6.0.3",
-    "eslint": "^6.6.0",
+    "eslint": "^7.0.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.6.0",
     "eslint-plugin-prettier": "^3.1.1",
     "mocha": "^6.2.2",
-    "nodemon": "^1.19.4",
+    "nodemon": "^2.0.17",
     "prettier": "^1.19.1",
     "proxyquire": "^1.7.10",
     "supertest": "^2.0.1"
